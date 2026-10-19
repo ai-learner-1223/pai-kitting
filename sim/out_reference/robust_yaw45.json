@@ -1,0 +1,18 @@
+{
+ "expert": {
+  "parts": 79,
+  "parts_total": 80,
+  "full_scenes": 9,
+  "scenes": 10
+ },
+ "policy": {
+  "parts": 67,
+  "parts_total": 80,
+  "full_scenes": 4,
+  "scenes": 10
+ },
+ "cond": "yaw45",
+ "setting": {
+  "yaw": 45
+ }
+}

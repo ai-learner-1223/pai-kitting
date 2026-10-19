@@ -1,0 +1,98 @@
+{
+ "seed": 20001,
+ "method": "active",
+ "labels": [
+  "C",
+  "A",
+  "NG",
+  "C",
+  "B",
+  "C",
+  "NG",
+  "B"
+ ],
+ "bottom": [
+  false,
+  false,
+  false,
+  false,
+  true,
+  false,
+  false,
+  false
+ ],
+ "ng": [
+  false,
+  false,
+  true,
+  false,
+  false,
+  false,
+  true,
+  false
+ ],
+ "pred": [
+  "C",
+  "A",
+  "NG",
+  "C",
+  "B",
+  "C",
+  "NG",
+  "B"
+ ],
+ "ident_ok": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "to_unknown": [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false
+ ],
+ "sort_ok": [
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_inspect": 3,
+ "n_photo": 9,
+ "n_retry": 0,
+ "inspections": [
+  {
+   "slot": 2,
+   "top": "?",
+   "bottom": "none",
+   "conf": 1.0
+  },
+  {
+   "slot": 4,
+   "top": "?",
+   "bottom": "B",
+   "conf": 0.999
+  },
+  {
+   "slot": 6,
+   "top": "?",
+   "bottom": "none",
+   "conf": 1.0
+  }
+ ],
+ "sim_time": 91.56
+}

@@ -1,0 +1,16 @@
+{
+ "expert": {
+  "parts": 80,
+  "parts_total": 80,
+  "full_scenes": 10,
+  "scenes": 10
+ },
+ "policy": {
+  "parts": 80,
+  "parts_total": 80,
+  "full_scenes": 10,
+  "scenes": 10
+ },
+ "cond": "base",
+ "setting": {}
+}

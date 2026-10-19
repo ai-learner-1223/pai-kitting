@@ -1,0 +1,1602 @@
+{
+ "summary": {
+  "method": "top",
+  "scenes": 20,
+  "parts": 160,
+  "p_bottom": 0.5,
+  "ident": 92,
+  "sort": 102,
+  "to_unknown": 68,
+  "inspections": 0,
+  "retries": 6,
+  "n_bottom": 58,
+  "n_ng": 10,
+  "ng_found": 0,
+  "rephoto": true,
+  "full_scenes": 0,
+  "mean_time": 74.88499999999999,
+  "time_per_part": 9.360624999999999
+ },
+ "rows": [
+  {
+   "seed": 20000,
+   "method": "top",
+   "labels": [
+    "B",
+    "C",
+    "B",
+    "C",
+    "B",
+    "B",
+    "A",
+    "C"
+   ],
+   "bottom": [
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "B",
+    "C",
+    "?",
+    "C",
+    "?",
+    "?",
+    "?",
+    "C"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 10,
+   "n_retry": 1,
+   "inspections": [],
+   "sim_time": 83.25
+  },
+  {
+   "seed": 20001,
+   "method": "top",
+   "labels": [
+    "C",
+    "A",
+    "NG",
+    "C",
+    "B",
+    "C",
+    "NG",
+    "B"
+   ],
+   "bottom": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false
+   ],
+   "pred": [
+    "C",
+    "A",
+    "?",
+    "C",
+    "?",
+    "C",
+    "?",
+    "B"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 70.35
+  },
+  {
+   "seed": 20002,
+   "method": "top",
+   "labels": [
+    "B",
+    "C",
+    "B",
+    "A",
+    "A",
+    "C",
+    "C",
+    "NG"
+   ],
+   "bottom": [
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "pred": [
+    "B",
+    "?",
+    "?",
+    "A",
+    "A",
+    "?",
+    "C",
+    "?"
+   ],
+   "ident_ok": [
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "to_unknown": [
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true
+   ],
+   "sort_ok": [
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 72.25
+  },
+  {
+   "seed": 20003,
+   "method": "top",
+   "labels": [
+    "A",
+    "B",
+    "A",
+    "A",
+    "B",
+    "B",
+    "B",
+    "C"
+   ],
+   "bottom": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "?",
+    "B",
+    "A",
+    "A",
+    "?",
+    "B",
+    "?",
+    "?"
+   ],
+   "ident_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false
+   ],
+   "to_unknown": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true
+   ],
+   "sort_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false
+   ],
+   "n_inspect": 0,
+   "n_photo": 10,
+   "n_retry": 1,
+   "inspections": [],
+   "sim_time": 82.95
+  },
+  {
+   "seed": 20004,
+   "method": "top",
+   "labels": [
+    "A",
+    "B",
+    "C",
+    "B",
+    "A",
+    "A",
+    "B",
+    "B"
+   ],
+   "bottom": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "A",
+    "?",
+    "C",
+    "B",
+    "?",
+    "A",
+    "B",
+    "?"
+   ],
+   "ident_ok": [
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "to_unknown": [
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "sort_ok": [
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 68.25
+  },
+  {
+   "seed": 20005,
+   "method": "top",
+   "labels": [
+    "A",
+    "NG",
+    "C",
+    "A",
+    "B",
+    "C",
+    "B",
+    "C"
+   ],
+   "bottom": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "ng": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "A",
+    "?",
+    "C",
+    "A",
+    "B",
+    "C",
+    "B",
+    "?"
+   ],
+   "ident_ok": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "to_unknown": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "sort_ok": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 69.65
+  },
+  {
+   "seed": 20006,
+   "method": "top",
+   "labels": [
+    "C",
+    "C",
+    "A",
+    "B",
+    "A",
+    "C",
+    "C",
+    "A"
+   ],
+   "bottom": [
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "C",
+    "C",
+    "?",
+    "B",
+    "?",
+    "?",
+    "C",
+    "A"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 71.05
+  },
+  {
+   "seed": 20007,
+   "method": "top",
+   "labels": [
+    "C",
+    "B",
+    "C",
+    "A",
+    "B",
+    "C",
+    "A",
+    "NG"
+   ],
+   "bottom": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "pred": [
+    "?",
+    "?",
+    "C",
+    "A",
+    "B",
+    "?",
+    "A",
+    "?"
+   ],
+   "ident_ok": [
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "to_unknown": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true
+   ],
+   "sort_ok": [
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 70.15
+  },
+  {
+   "seed": 20008,
+   "method": "top",
+   "labels": [
+    "A",
+    "C",
+    "A",
+    "C",
+    "B",
+    "C",
+    "A",
+    "B"
+   ],
+   "bottom": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "A",
+    "C",
+    "A",
+    "?",
+    "?",
+    "?",
+    "?",
+    "B"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 72.85
+  },
+  {
+   "seed": 20009,
+   "method": "top",
+   "labels": [
+    "C",
+    "C",
+    "A",
+    "A",
+    "C",
+    "NG",
+    "B",
+    "C"
+   ],
+   "bottom": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+   ],
+   "pred": [
+    "C",
+    "C",
+    "A",
+    "?",
+    "?",
+    "?",
+    "B",
+    "C"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 69.75
+  },
+  {
+   "seed": 20010,
+   "method": "top",
+   "labels": [
+    "C",
+    "C",
+    "A",
+    "A",
+    "A",
+    "C",
+    "A",
+    "C"
+   ],
+   "bottom": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "C",
+    "C",
+    "A",
+    "A",
+    "A",
+    "?",
+    "?",
+    "C"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 70.15
+  },
+  {
+   "seed": 20011,
+   "method": "top",
+   "labels": [
+    "B",
+    "C",
+    "B",
+    "NG",
+    "C",
+    "C",
+    "C",
+    "A"
+   ],
+   "bottom": [
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "B",
+    "C",
+    "?",
+    "?",
+    "?",
+    "?",
+    "C",
+    "A"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true
+   ],
+   "to_unknown": [
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "sort_ok": [
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 10,
+   "n_retry": 1,
+   "inspections": [],
+   "sim_time": 85.95
+  },
+  {
+   "seed": 20012,
+   "method": "top",
+   "labels": [
+    "A",
+    "C",
+    "C",
+    "A",
+    "A",
+    "B",
+    "C",
+    "B"
+   ],
+   "bottom": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "A",
+    "C",
+    "?",
+    "A",
+    "A",
+    "B",
+    "?",
+    "?"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "to_unknown": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true
+   ],
+   "sort_ok": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 69.25
+  },
+  {
+   "seed": 20013,
+   "method": "top",
+   "labels": [
+    "B",
+    "C",
+    "NG",
+    "C",
+    "B",
+    "A",
+    "B",
+    "A"
+   ],
+   "bottom": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "?",
+    "C",
+    "?",
+    "C",
+    "?",
+    "?",
+    "B",
+    "A"
+   ],
+   "ident_ok": [
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "to_unknown": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false
+   ],
+   "sort_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 10,
+   "n_retry": 1,
+   "inspections": [],
+   "sim_time": 91.35
+  },
+  {
+   "seed": 20014,
+   "method": "top",
+   "labels": [
+    "B",
+    "C",
+    "C",
+    "B",
+    "A",
+    "A",
+    "A",
+    "NG"
+   ],
+   "bottom": [
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "pred": [
+    "B",
+    "C",
+    "C",
+    "?",
+    "A",
+    "A",
+    "?",
+    "?"
+   ],
+   "ident_ok": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false
+   ],
+   "to_unknown": [
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "sort_ok": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 69.05
+  },
+  {
+   "seed": 20015,
+   "method": "top",
+   "labels": [
+    "B",
+    "B",
+    "B",
+    "A",
+    "C",
+    "C",
+    "C",
+    "A"
+   ],
+   "bottom": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "?",
+    "?",
+    "B",
+    "?",
+    "?",
+    "C",
+    "C",
+    "A"
+   ],
+   "ident_ok": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "to_unknown": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "sort_ok": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 10,
+   "n_retry": 1,
+   "inspections": [],
+   "sim_time": 85.35
+  },
+  {
+   "seed": 20016,
+   "method": "top",
+   "labels": [
+    "B",
+    "B",
+    "A",
+    "A",
+    "B",
+    "C",
+    "C",
+    "C"
+   ],
+   "bottom": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "?",
+    "B",
+    "A",
+    "?",
+    "B",
+    "C",
+    "C",
+    "C"
+   ],
+   "ident_ok": [
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "to_unknown": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false
+   ],
+   "sort_ok": [
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 71.05
+  },
+  {
+   "seed": 20017,
+   "method": "top",
+   "labels": [
+    "A",
+    "B",
+    "A",
+    "C",
+    "A",
+    "NG",
+    "B",
+    "B"
+   ],
+   "bottom": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+   ],
+   "pred": [
+    "?",
+    "B",
+    "A",
+    "C",
+    "?",
+    "?",
+    "?",
+    "B"
+   ],
+   "ident_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   "to_unknown": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "sort_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    true
+   ],
+   "n_inspect": 0,
+   "n_photo": 10,
+   "n_retry": 1,
+   "inspections": [],
+   "sim_time": 83.25
+  },
+  {
+   "seed": 20018,
+   "method": "top",
+   "labels": [
+    "A",
+    "B",
+    "A",
+    "B",
+    "A",
+    "B",
+    "C",
+    "B"
+   ],
+   "bottom": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "?",
+    "B",
+    "A",
+    "B",
+    "?",
+    "?",
+    "C",
+    "?"
+   ],
+   "ident_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "to_unknown": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "sort_ok": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 70.55
+  },
+  {
+   "seed": 20019,
+   "method": "top",
+   "labels": [
+    "A",
+    "A",
+    "A",
+    "B",
+    "C",
+    "A",
+    "C",
+    "C"
+   ],
+   "bottom": [
+    false,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "ng": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "pred": [
+    "A",
+    "?",
+    "?",
+    "B",
+    "?",
+    "A",
+    "C",
+    "?"
+   ],
+   "ident_ok": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "to_unknown": [
+    false,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "sort_ok": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "n_inspect": 0,
+   "n_photo": 9,
+   "n_retry": 0,
+   "inspections": [],
+   "sim_time": 71.25
+  }
+ ]
+}

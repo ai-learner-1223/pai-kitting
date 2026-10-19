@@ -1,0 +1,10 @@
+__pycache__/
+sim/out/
+sim/logs/
+sim/kit_data/bundled/
+lerobot/data/
+lerobot/outputs/
+lerobot/out/
+lerobot/act_kit_new/
+*.zip
+*.log

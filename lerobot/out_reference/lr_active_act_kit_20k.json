@@ -1,0 +1,10 @@
+{
+ "scenes": 20,
+ "parts": 160,
+ "ident": 159,
+ "sort": 156,
+ "full_scenes": 17,
+ "mean_time": 103.876,
+ "checkpoint": "act_kit_20k",
+ "wall_s": 332
+}

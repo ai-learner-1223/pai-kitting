@@ -1,0 +1,15 @@
+{
+ "parts": 320,
+ "label_correct": 319,
+ "missed": 1,
+ "pos_err_mm_mean": 0.26348007242665417,
+ "pos_err_mm_max": 6.918142261570612,
+ "yaw_err_deg_mean": 0.283653020991501,
+ "yaw_err_deg_max": 2.3316943881180254,
+ "confusion": {
+  "?->?": 50,
+  "A->A": 90,
+  "B->B": 90,
+  "C->C": 89
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "expert": {
+  "parts": 80,
+  "parts_total": 80,
+  "full_scenes": 10,
+  "scenes": 10
+ },
+ "policy": {
+  "parts": 67,
+  "parts_total": 80,
+  "full_scenes": 3,
+  "scenes": 10
+ },
+ "cond": "shift_near",
+ "setting": {
+  "shift": -0.03
+ }
+}

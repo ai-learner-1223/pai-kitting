@@ -1,0 +1,13 @@
+# 結果（out/）とログ（logs/）をホストの sim/out・sim/logs に書き出す
+#   docker compose build                                  # イメージを作る（初回 10 分程度）
+#   docker compose run --rm sim                           # 環境の確認（check_env.py）
+#   docker compose run --rm sim bash reproduce.sh quick   # 再現（約 1 時間）
+services:
+  sim:
+    build: .
+    image: pai-kitting:latest
+    user: "${UID:-1000}:${GID:-1000}"     # 書き出したファイルの持ち主を自分にする
+    volumes:
+      - ./sim/out:/app/sim/out
+      - ./sim/logs:/app/sim/logs
+      - /etc/localtime:/etc/localtime:ro  # 進み具合の表示をホストと同じ時刻にする

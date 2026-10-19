@@ -1,0 +1,9 @@
+# 動作確認済みのバージョン（Python 3.13）
+mujoco==3.15.0
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+imageio==2.37.4
+imageio-ffmpeg==0.6.0
+matplotlib==3.11.2
+pillow==12.3.0
+# torch は CPU 版を別途インストール（setup_env.sh 参照）: torch==2.14.1
