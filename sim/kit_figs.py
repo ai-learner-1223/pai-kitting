@@ -1,4 +1,4 @@
-"""図：方策の成功率比較（手本・改善前・改善後）と、検証用デモでの GT と予測の比較"""
+"""図：方策の成功率比較（スクリプト方策・改善前・改善後）と、検証用デモでの GT と予測の比較"""
 import os, json, pickle
 import torch, torch._dynamo
 import numpy as np
@@ -26,7 +26,7 @@ def style(ax):
 def versions():
     from kit_il import load_policy_evals
     E = load_policy_evals(OUT)
-    rows = [("expert", "手本（IK）\n連続作業", GRAY),
+    rows = [("expert", "スクリプト方策\n連続作業", GRAY),
             ("pol_single.pt_reset_home", "改善前\n毎回ホームから", "#86b6ef"),
             ("pol_single.pt", "改善前\n連続作業", "#86b6ef"),
             ("pol_chain.pt", "改善後\n連続作業", BLUE)]
@@ -55,7 +55,7 @@ def gt_vs_pred():
     fig, axes = plt.subplots(2, 4, figsize=(11, 4.4), sharex=True)
     names = [f"関節 {i + 1}" for i in range(7)] + ["把持（1=閉）"]
     for i, ax in enumerate(axes.flat):
-        ax.plot(gt[:, i], "--", c=MUTED, lw=1.6, label="正解（手本）")
+        ax.plot(gt[:, i], "--", c=MUTED, lw=1.6, label="正解（スクリプト方策）")
         ax.plot(pred[:, i], c=BLUE, lw=1.6, label="方策の予測")
         ax.set_title(names[i], fontsize=9, color=INK); ax.tick_params(labelsize=7)
         ax.grid(True, color=GRID, lw=0.6)
