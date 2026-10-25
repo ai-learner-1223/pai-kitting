@@ -1,6 +1,6 @@
 # LeRobot 版：同じデモで ACT 方策を学習して、自作の方策と比べる
 
-最終課題の追加実験（説明資料 4.3 節）。最終課題で集めた連続デモ 2,000 本を LeRobot の形式に変換し、
+本体（`sim/`）の追加実験。本体で集めた連続デモ 2,000 本を LeRobot の形式に変換し、
 LeRobot の ACT 方策を学習させて、自作の方策（3 層 MLP）と同じ条件で評価する。Docker は使わず、CPU だけで動く。
 
 ## 結果（ACT：20,000 ステップ学習、CPU で約 2 時間）
@@ -39,7 +39,7 @@ lerobot/
 ├── lr_convert.py          連続デモ（chain_train.pkl）→ LeRobotDataset（data/kit_chain）
 ├── lr_policy.py           LeRobot の方策を、今回のシミュレーションの実行ループから使うための包み
 ├── lr_eval.py             自作の方策と同じ条件で評価（policy：方策のみ／active：能動的な認識の全体）
-├── chain_train.pkl        最終課題で集めた連続デモ 2,000 本（観測 14 次元・行動 8 次元、10 Hz）
+├── chain_train.pkl        本体で集めた連続デモ 2,000 本（観測 14 次元・行動 8 次元、10 Hz）
 ├── act_kit_20k/           学習済みの ACT（20,000 ステップ）
 └── out_reference/         上の表の評価結果（.json）
 ```
@@ -56,11 +56,11 @@ LeRobot のデータでは、観測を 2 つに分けている。
 
 ## 実行方法
 
-このフォルダーは最終課題のリポジトリ（`pai_kitting`）の中にあり、`lr_eval.py` は `../sim` のシミュレーションを使う。
+このフォルダーはこのリポジトリ（`pai_kitting`）の中にあり、`lr_eval.py` は `../sim` のシミュレーションを使う。
 
 ### 1. 環境を作る（初回のみ）
 
-LeRobot は torch・numpy のバージョンを指定するため、最終課題の `pai-venv` とは別の仮想環境にする。
+LeRobot は torch・numpy のバージョンを指定するため、本体の `pai-venv` とは別の仮想環境にする。
 
 ```bash
 cd ~/physical_ai/pai_kitting/lerobot

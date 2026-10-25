@@ -10,7 +10,7 @@
 
 1. [概要](#概要)
 2. [処理の流れ](#処理の流れ)
-3. [ベースライン（最終課題サンプル）との関係](#ベースライン最終課題サンプルとの関係)
+3. [ベースラインとの関係](#ベースラインとの関係)
 4. [主な結果](#主な結果)
 5. [ファイル構成](#ファイル構成)
 6. [実行方法](#実行方法)
@@ -59,9 +59,9 @@ A・B・C の 3 種類があり、刻印ロゴ（A＝○、B＝＋、C＝△）�
        ※ 撮影のあと「前の部品を置いた直後の姿勢」へ戻してから方策へ渡す（方策の学習時の開始状態）
 ```
 
-## ベースライン（最終課題サンプル）との関係
+## ベースラインとの関係
 
-ベースラインは最終課題サンプル「Pick and Place Task - ROS2 Gazebo Simulation (UR3 + Robotiq 2f-85)」（IFRA Cranfield, 2023）。
+ベースラインは「Pick and Place Task - ROS2 Gazebo Simulation (UR3 + Robotiq 2f-85)」（IFRA Cranfield, 2023）。
 
 | | サンプル | 本システム |
 |---|---|---|
@@ -73,7 +73,7 @@ A・B・C の 3 種類があり、刻印ロゴ（A＝○、B＝＋、C＝△）�
 | AI | なし | 認識CNN（手先カメラ用・検査カメラ用）、模倣学習方策 |
 | 環境 | ROS 2 Humble ＋ Gazebo | MuJoCo（Python のみ、CPU で動作） |
 
-講義との対応：第5回の「デモ収集 → 学習（ACT）→ デプロイ → 方策のデバッグ（正解と予測の比較）」の流れを、
+模倣学習の基本的な流れ「デモ収集 → 学習（ACT）→ デプロイ → 方策のデバッグ（正解と予測の比較）」を、
 テレオペの代わりに、IK で関節角を計算して決まった手順で動かすプログラム（スクリプト方策）でデモを集める形で、シミュレーション上に再現した。アクションチャンキングと
 時間方向の加重平均（temporal ensembling）は ACT と同じ考え方。
 
@@ -145,7 +145,7 @@ pai_kitting/
     │
     ├── reproduce.sh             再現スクリプト（quick：学習済みモデルで評価〜録画／full：学習から）
     ├── check_env.py             実行環境の確認（すべて [OK] なら準備完了）
-    ├── compare_results.py       提出時の結果（out_reference/）と再現結果の比較表
+    ├── compare_results.py       基準の結果（out_reference/）と再現結果の比較表
     │
     │   ── シミュレーション
     ├── robot_sim.py             MuJoCo の基本：逆運動学（IK）、移動、把持、録画
@@ -180,14 +180,14 @@ pai_kitting/
     ├── kit_robust_all.sh        上の検証を全条件まとめて実行
     │
     │   ── 動画・図
-    ├── active_video.py          提出用動画の録画（タスク実行の場面のみ、小窓にカメラ映像）と結合
+    ├── active_video.py          デモ動画の録画（タスク実行の場面のみ、小窓にカメラ映像）と結合
     ├── speedup.py               倍速化（画面に「1.5倍速」と表示）
     ├── kit_task_video.py        基本の設定の動画（任意）
     ├── kit_compare.py           改善前後の方策を同じシーンで録画（任意）
     ├── kit_figs.py              レポート用のグラフ（方策の成功率、正解と予測の比較）
     ├── fig_scene.py             レポート用の画像（シーン全体、手先カメラとCNNの出力、検査の様子）
     │
-    └── out_reference/           提出時の評価結果（.json）と図（.png）。再現結果との比較用
+    └── out_reference/           基準の評価結果（.json）と図（.png）。再現結果との比較用
 
 lerobot/                         追加実験：同じデモで LeRobot の ACT を学習し、自作の方策と比べる（詳細は lerobot/README.md）
 ├── setup_lerobot.sh             LeRobot 用の仮想環境（~/lr-venv）
@@ -264,7 +264,7 @@ bash reproduce.sh quick 2>&1 | tee quick.log     # 学習済みモデルで 評�
 | `WITH_BASIC=1 bash reproduce.sh quick` | 基本の設定の動画（`out/final_video_task.mp4`）も作る |
 | `bash kit_robust_all.sh` | 汎化性能の検証（各条件 10 シーン、結果は `out/robust_*.json`） |
 
-最後に、提出時の結果（`out_reference/`）と再現結果の比較表が表示される（`python compare_results.py` でも表示できる）。
+最後に、基準の結果（`out_reference/`）と再現結果の比較表が表示される（`python compare_results.py` でも表示できる）。
 quick は同梱モデルを使うため、数値はほぼ一致する。full は CPU の違いで学習結果がわずかに変わることがある。
 
 実行中は PC をスリープさせないこと（WSL が止まり、処理も止まる）。
@@ -275,7 +275,7 @@ quick は同梱モデルを使うため、数値はほぼ一致する。full は
 
 | ファイル | 内容 |
 |---|---|
-| `final_video_active.mp4` | 提出用動画（2 シーン、1.5 倍速と画面に明記） |
+| `final_video_active.mp4` | デモ動画（2 シーン、1.5 倍速と画面に明記） |
 | `final_video_active_x1.mp4` | 同じ動画の等速版 |
 | `active_scene_1.mp4`, `active_scene_2.mp4` | 結合前の各シーンの録画（`.json` は各シーンの結果） |
 | `active_top.json`, `active_all.json`, `active_active.json` | 3 方式（上面のみ／全数検査／必要時のみ）の評価結果 |
