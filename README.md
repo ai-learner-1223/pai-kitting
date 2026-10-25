@@ -3,7 +3,7 @@
 
 Physical AI 応用編1「知能ロボティクス講座」最終課題
 
-- 動画（YouTube）：https://youtu.be/yMXioFMU1xY（1.5 倍速）
+- 動画（YouTube）：<https://youtu.be/yMXioFMU1xY>（1.5 倍速）
 - 説明資料：説明資料_PAI最終課題_MShiroishi.pdf
 
 ---
