@@ -1,4 +1,4 @@
-"""speedup.py — 動画を指定倍速にし、右下に「N倍速」と表示する（提出規定：2倍速まで、倍速の旨を明記）
+"""speedup.py — 動画を指定倍速にし、右下に「N倍速」と表示する
   python speedup.py IN.mp4 OUT.mp4 1.5"""
 import sys, numpy as np, imageio.v2 as imageio
 from PIL import Image, ImageDraw

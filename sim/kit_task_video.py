@@ -1,5 +1,5 @@
 """
-kit_task_video.py — 提出用動画：タスク実行の場面だけ（等速）。複数シーンを続けて流す
+kit_task_video.py — デモ動画：タスク実行の場面だけ（等速）。複数シーンを続けて流す
   python kit_task_video.py scene SEED INDEX TOTAL   # 1 シーンを 1280x720 で録画（out/task_scene_INDEX.mp4）
   python kit_task_video.py join N                   # 録画したシーンをつなぐ（out/final_video_task.mp4）
 """

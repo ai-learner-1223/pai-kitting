@@ -1,5 +1,5 @@
 """
-active_video.py — 提出用動画（能動的な認識）：タスク実行の場面だけ（等速）
+active_video.py — デモ動画（能動的な認識）：タスク実行の場面だけ（等速）
   python active_video.py scene SEED INDEX TOTAL   # 1 シーンを 1280x720 で録画（out/active_scene_INDEX.mp4）
   python active_video.py join N                   # つなぐ（out/final_video_active.mp4）
 小窓：最初は手先カメラの画像と認識CNNの出力、検査中は下カメラの画像と識別結果

@@ -1,5 +1,5 @@
 """fig_scene.py — レポート用の図：シーン全体（scene_start.png）、手先カメラの画像と認識結果（kit_main_perception.png）、
-検査の様子（active_frame.png：提出動画から検査中の 1 コマを切り出す）"""
+検査の様子（active_frame.png：デモ動画から検査中の 1 コマを切り出す）"""
 import os, json
 if os.name != "nt": os.environ.setdefault("MUJOCO_GL", "osmesa")
 import torch, torch._dynamo

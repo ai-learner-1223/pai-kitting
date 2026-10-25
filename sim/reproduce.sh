@@ -4,7 +4,7 @@
 #   bash reproduce.sh full    … データ生成・デモ収集・学習から全部やり直す（学習済みモデルを上書き）
 #   SMALL=1 bash reproduce.sh full   … 規模を小さくして手順だけ確認する（数値は参考にならない）
 #   WITH_BASIC=1 を付けると、能動的な認識なしの基本版の動画（out/final_video_task.mp4）も作る
-# 結果は out/、ログは logs/。最後に out_reference/（提出時の結果）と比較表を表示する。
+# 結果は out/、ログは logs/。最後に out_reference/（基準の結果）と比較表を表示する。
 set -u
 cd "$(dirname "$0")"
 MODE=${1:-quick}
@@ -49,7 +49,7 @@ wait
 run eval_pipeline python kit_run.py eval kit_data/pol_chain.pt $NEV 0.15
 step "6/8 能動的な認識：3方式の比較（上面のみ・全数検査・必要時のみ、各${NEV}シーン）"
 for m in active top all; do run active_$m python active.py eval $m $NEV; done
-step "7/8 録画（提出用：能動的な認識のシーン 2 つ、1280x720、並列）"
+step "7/8 録画（デモ動画：能動的な認識のシーン 2 つ、1280x720、並列）"
 run rec_active1 python active_video.py scene 20001 1 2 &
 run rec_active2 python active_video.py scene 20002 2 2 &
 wait
